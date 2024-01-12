@@ -24,34 +24,34 @@ void initializeMesh() {
   vertices = new ArrayList<>();
   faces = new ArrayList<>();
   
-  vertices.add(new PVector(0, -50, 0)); // Apex
-  vertices.add(new PVector(-50, 50, -50)); // Base vertex 1
-  vertices.add(new PVector(50, 50, -50));  // Base vertex 2
-  vertices.add(new PVector(50, 50, 50));   // Base vertex 3
-  vertices.add(new PVector(-50, 50, 50));  // Base vertex 4
+  //vertices.add(new PVector(0, -50, 0)); // Apex
+  //vertices.add(new PVector(-50, 50, -50)); // Base vertex 1
+  //vertices.add(new PVector(50, 50, -50));  // Base vertex 2
+  //vertices.add(new PVector(50, 50, 50));   // Base vertex 3
+  //vertices.add(new PVector(-50, 50, 50));  // Base vertex 4
   
   // Define faces using vertex indices
-  faces.add(new int[]{0, 1, 2}); // Base triangle 1
-  faces.add(new int[]{0, 2, 3}); // Base triangle 2
-  faces.add(new int[]{0, 3, 4}); // Base triangle 3
-  faces.add(new int[]{0, 4, 1}); // Base triangle 4
-  faces.add(new int[]{1, 2, 3, 4}); // Side face
-  //vertices.add(new PVector(-50, -50, -50));
-  //vertices.add(new PVector(50, -50, -50));
-  //vertices.add(new PVector(50, 50, -50));
-  //vertices.add(new PVector(-50, 50, -50));
-  //vertices.add(new PVector(-50, -50, 50));
-  //vertices.add(new PVector(50, -50, 50));
-  //vertices.add(new PVector(50, 50, 50));
-  //vertices.add(new PVector(-50, 50, 50));
+  //faces.add(new int[]{0, 1, 2}); // Base triangle 1
+  //faces.add(new int[]{0, 2, 3}); // Base triangle 2
+  //faces.add(new int[]{0, 3, 4}); // Base triangle 3
+  //faces.add(new int[]{0, 4, 1}); // Base triangle 4
+  //faces.add(new int[]{1, 2, 3, 4}); // Side face
+  vertices.add(new PVector(-50, -50, -50));
+  vertices.add(new PVector(50, -50, -50));
+  vertices.add(new PVector(50, 50, -50));
+  vertices.add(new PVector(-50, 50, -50));
+  vertices.add(new PVector(-50, -50, 50));
+  vertices.add(new PVector(50, -50, 50));
+  vertices.add(new PVector(50, 50, 50));
+  vertices.add(new PVector(-50, 50, 50));
   
   //// Define faces using vertex indices
-  //faces.add(new int[]{0, 1, 2, 3});
-  //faces.add(new int[]{4, 5, 6, 7});
-  //faces.add(new int[]{0, 3, 7, 4});
-  //faces.add(new int[]{1, 2, 6, 5});
-  //faces.add(new int[]{3, 2, 6, 7});
-  //faces.add(new int[]{0, 1, 5, 4});
+  faces.add(new int[]{0, 1, 2, 3});
+  faces.add(new int[]{4, 5, 6, 7});
+  faces.add(new int[]{0, 3, 7, 4});
+  faces.add(new int[]{1, 2, 6, 5});
+  faces.add(new int[]{3, 2, 6, 7});
+  faces.add(new int[]{0, 1, 5, 4});
 }
 
 void drawMesh() {
