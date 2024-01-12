@@ -3,7 +3,7 @@
 ##  1ER étape : AMELIORATION
 
 - Appuyez sur la souris pour ajouter une balle.
-- Calculez des collisions entre les balles.
+- Calcule des collisions entre les balles.
 
 ## 2EME étape : CATMULL-CLARK SUBDIVISION
 
